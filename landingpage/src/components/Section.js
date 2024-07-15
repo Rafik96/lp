@@ -1,15 +1,14 @@
-// src/components/Section.js
-import React, { forwardRef } from 'react';
-import './Section.css';
+// Section.js
 
-const Section = forwardRef(({ id, title, content }, ref) => {
+import React from 'react';
+import './Section.css'; // Importuj plik CSS dla sekcji
+
+const Section = React.forwardRef(({ id, title, content }, ref) => {
     return (
-        <section id={id} ref={ref} className="section">
-            <div className="section-content">
-                <h2>{title}</h2>
-                <p>{content}</p>
-            </div>
-        </section>
+        <div className="section" id={id} ref={ref}>
+            <h2>{title}</h2>
+            <div dangerouslySetInnerHTML={{ __html: content }} />
+        </div>
     );
 });
 

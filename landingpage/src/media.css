@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+
+  .section {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 95vw;
+  }
+
+  .App-header h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 1rem;
+  }
+  .navbar-links a {
+    color: #646b52;
+    text-decoration: none;
+    font-size: 1rem;
+}
+}

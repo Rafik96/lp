@@ -1,21 +1,29 @@
 .section {
-    width: 50vw; /* Szerokość sekcji równa szerokości całego widoku okna */
-    background-color: #795b5b;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(199, 12, 12, 0.1);
-    text-align: center; /* Centruje zawartość sekcji */
+    
+    width: 75vw;
+    padding-top: 1px;
+    text-align: center;
 }
 
 .section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    background-color: #b93232;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 .section p {
-    font-size: 1.2rem;
-    background-color: #32b939;
+    margin-top: auto;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.therapy-list {
+    text-align: center; /* Wyśrodkowanie listy */
+    list-style-type: square; /* Typ punktorów */
+}
+
+.therapy-list li {
+    text-align: left; /* Wyśrodkowanie tekstu punktów */
+    margin-bottom: 10px; /* Odstęp między punktami */
 }

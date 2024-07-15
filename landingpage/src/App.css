@@ -1,34 +1,47 @@
-/* src/App.css */
-
 .App {
-  text-align: center; /* Centralizuje zawartość */
+  text-align: center;
   display: block;
 }
 
 .App-header {
-  padding: 0.5rem;
-  background-color: #096437;
-  color: #fff;
+  padding: 1px;
+  margin: 1rem;
+  background-color: #646b52;
+  color: white;
+  box-shadow: -1px 1px 30px 6px #90977e;
+  line-height: 1.5rem;
 }
 
 .App-header h1 {
-  font-size: 2.5rem;
+  font-size: 32px;
+}
+
+.header-image-container {
+  margin: 1rem auto;
+  text-align: center;
+  
+}
+
+.header-image {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-image-caption {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: bold;
 }
 
 .main-content {
   padding: 2rem;
   display: flex;
-  flex-direction: column; /* Ustawia elementy jeden pod drugim */
-  align-items: center; /* Centruje elementy wzdłuż osi x */
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .main-content {
-      padding: 1rem; /* Mniejszy padding dla lepszej dostępności na małych ekranach */
-  }
-
-  .section {
-      padding: 1.5rem; /* Mniejszy padding w sekcjach */
-      font-size: 1rem; /* Mniejsza czcionka w sekcjach */
-  }
-}
+@import './media.css';
