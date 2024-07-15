@@ -18,12 +18,32 @@
     line-height: 1.6;
 }
 
+/* Styl dla elementów listy terapii */
 .therapy-list {
-    text-align: center; /* Wyśrodkowanie listy */
-    list-style-type: square; /* Typ punktorów */
+    list-style-type: none; /* Usunięcie domyślnych punktorów */
+    padding-left: 40%;
+    text-align: center; /* Wyśrodkowanie całej listy */
 }
 
+/* Styl dla elementów listy terapii */
 .therapy-list li {
-    text-align: left; /* Wyśrodkowanie tekstu punktów */
-    margin-bottom: 10px; /* Odstęp między punktami */
+    text-align: left; /* Wyrównanie tekstu do lewej strony */
+    margin-bottom: 10px; /* Odstęp między elementami listy */
+    display: flex; /* Użycie flexbox dla łatwiejszego zarządzania wyrównaniem */
+    align-items: center; /* Wyśrodkowanie w pionie */
+}
+
+/* Styl dla punktorów listy terapii */
+.therapy-list li::before {
+    content: '▪'; /* Zastosowanie punktora */
+    margin-right: 10px; /* Odstęp między punktorem a tekstem */
+    flex: none; /* Zapobiega rozciąganiu punktora */
+    align-self: flex-start; /* Wyśrodkowanie punktora względem górnego marginesu elementu listy */
+}
+
+
+.section.office-image img {
+
+    border-radius: 10px; /* Przykładowy styl, np. zaokrąglone rogi */
+    margin-top: -50px;
 }

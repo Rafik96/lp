@@ -44,4 +44,16 @@
   align-items: center;
 }
 
+.office-image-container {
+  padding-top: 100px;
+  align-items: center;
+}
+
+.address-container  {
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+  line-height: 0.5
+}
+
 @import './media.css';

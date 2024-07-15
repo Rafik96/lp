@@ -6,7 +6,7 @@
   .section {
     padding: 1rem;
     font-size: 1rem;
-    width: 95vw;
+    width: 90vw;
   }
 
   .App-header h1 {
@@ -23,4 +23,7 @@
     text-decoration: none;
     font-size: 1rem;
 }
+  .office-image-container img {
+    max-width: 90%;
+  }
 }

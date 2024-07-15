@@ -28,7 +28,7 @@ function App() {
                 <h1>Psychoterapia uzależnień i wsparcie psychologiczne</h1>
             </header>
             <div className="header-image-container">
-                    <img src="https://i.postimg.cc/4NZTfgD8/Anna-Maguder-2.jpg" alt="Example" className="header-image" />
+                    <img src="https://i.postimg.cc/4NZTfgD8/Anna-Maguder-2.jpg" alt="Anna Maguder" className="header-image" />
                     <p className="header-image-caption">mgr Anna Maguder</p>
             </div>
             <main className="main-content">
@@ -39,7 +39,8 @@ function App() {
                             id={section.id}
                             title={section.title}
                             content={section.content}
-                            ref={section.id === 'home' ? eduRef : section.id === 'about' ? expRef : section.id === 'services' ? therapyRef : section.id === 'contact' ? contactRef : null}
+                            imageSrc={section.imageSrc}
+                            ref={section.id === 'edu' ? eduRef : section.id === 'exp' ? expRef : section.id === 'therapy' ? therapyRef : section.className === 'office-image-container' ? contactRef : null}
                         />
                     ))}
                 </div>

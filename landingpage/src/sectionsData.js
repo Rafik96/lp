@@ -1,16 +1,16 @@
 export const sectionsData = [
     {
-        id: "Education",
+        id: "edu",
         title: "Wykształcenie",
         content: '<p>Jestem magistrem psychologii o specjalności klinicznej oraz specjalistką psychoterapii uzależnień w trakcie procesu certyfikacji. Aktualnie rozwijam umiejętności i zdobywam wiedzę w Łódzkiej Szkole Psychoterapii – Vis Salutis. Moja praca jest nadzorowana przez certyfikowanego superwizora RSPU. Ponadto, stale podnoszę kwalifikacje zawodowe, aby być na bieżąco z najnowszymi osiągnięciami w dziedzinie psychologii i psychoterapii. </p>'
     },
     {
-        id: "Experience",
+        id: "exp",
         title: "Doświadczenie zawodowe",
         content: '<p>Doświadczenie zawodowe zdobywałam w ramach wolontariatu w Fundacji „Arka” zajmującej się postrehabilitacją osób uzależnionych od środków psychoaktywnych, a także w ramach stażu w ośrodku leczenia uzależnień MONAR przy ul. Tuszyńskiej w Łodzi. Ponadto zdobywałam doświadczenia w Centrum Pomocy Rodzinie oraz współpracując z Poradnią Stowarzyszenia MONAR i prywatnymi placówkami. </p>'
     },
     {
-        id: "Therapy",
+        id: "therapy",
         title: "Jak mogę Ci pomóc?",
         content: `
             <p>W pracy z człowiekiem kieruję się podejściem integracyjnym, co oznacza, że wykorzystuję różne teorie i techniki terapeutyczne, dostosowując je do indywidualnych potrzeb i celów klienta. Praktykuję holistyczne podejście, uwzględniające zarówno aspekty psychologiczne, jak i emocjonalne klienta, aby wspierać go w procesie zdrowienia i rozwoju.</p>
@@ -20,9 +20,12 @@ export const sectionsData = [
         `
     },
     {
-        id: "info",
+        id: "professional-practice",
         title: "W ramach praktyki prowadzę:",
-        content: '<ul class = "therapy-list"><li>psychoterapię uzależnień</li><li>psychoterapię współuzależnień</li><li>konsultacje psychologiczne</li><li>poradnictwo psychologiczne</li?'
+        content: '<ul class = "therapy-list"><li>psychoterapię uzależnień</li> <li>psychoterapię współuzależnień</li> <li>konsultacje psychologiczne</li> <li>poradnictwo psychologiczne</li?'
+    },
+    {
+        id: "office-image",
+        imageSrc: "https://i.postimg.cc/6qCZbQ6M/gabinet.jpg"
     }
-
 ];
