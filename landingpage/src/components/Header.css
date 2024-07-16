@@ -5,6 +5,7 @@
     /* margin-top: 10px; */
     background-color: #646b52;
     color: white;
+    border-radius: 10px;
     box-shadow: -1px 1px 30px 6px #90977e;
     line-height: 1.5rem;
   }

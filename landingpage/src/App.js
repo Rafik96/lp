@@ -4,21 +4,27 @@ import Navbar from './components/Navbar';
 import Section from './components/Section';
 import Header from './components/Header';
 import ImageContainer from './components/ImageContainer'
+import Widget from './components/Widget';
 import './App.css';
 import { sectionsData } from './sectionsData';
+
 
 function App() {
     const eduRef = useRef(null);
     const expRef = useRef(null);
     const therapyRef = useRef(null);
     const contactRef = useRef(null);
+    
 
     const scrollToSection = (ref) => {
         ref.current.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
+        
         <div className="App">
+            <Widget
+            />
             <Navbar
                 scrollToSection={scrollToSection}
                 eduRef={eduRef}
