@@ -1,4 +1,3 @@
-// src/components/Navbar.js
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 
@@ -10,7 +9,7 @@ const Navbar = ({ scrollToSection, eduRef, expRef, therapyRef, contactRef }) => 
             const navbar = document.querySelector('.navbar');
             const offsetTop = navbar.offsetTop;
 
-            if (window.pageYOffset > offsetTop) {
+            if (window.scrollY > offsetTop) {
                 setIsFixed(true);
             } else {
                 setIsFixed(false);
@@ -25,7 +24,13 @@ const Navbar = ({ scrollToSection, eduRef, expRef, therapyRef, contactRef }) => 
 
     const handleLinkClick = (event, ref) => {
         event.preventDefault();
-        scrollToSection(ref);
+
+        const targetPosition = ref.current.offsetTop - 50;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
     };
 
     return (

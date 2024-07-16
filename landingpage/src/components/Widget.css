@@ -13,7 +13,7 @@
 }
 
 .widget-buttons button {
-    background-color: #007bff;
+    background-color: #646b52;
     color: white;
     border: none;
     padding: 10px;
@@ -24,8 +24,8 @@
 }
 
 .widget-buttons button .button-icon {
-    width: 20px; /* Dostosuj szerokość ikon */
-    height: 20px; /* Dostosuj wysokość ikon */
+    width: 15px; /* Dostosuj szerokość ikon */
+    height: 15px; /* Dostosuj wysokość ikon */
 }
 
 .widget-buttons button span {
@@ -33,5 +33,5 @@
 }
 
 .widget-buttons button:hover {
-    background-color: #0056b3;
+    background-color: #3d4231;
 }

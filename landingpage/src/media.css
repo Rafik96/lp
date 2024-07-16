@@ -17,7 +17,6 @@
   .navbar-links {
     display: flex;
     gap: 1rem;
-    /* padding: 0px 25px 0px 0px; */
   }
 
   .navbar-links a {
@@ -28,8 +27,22 @@
   .therapy-list {
     list-style-type: none; /* Usunięcie domyślnych punktorów */
     text-align: center; /* Wyśrodkowanie całej listy */
-    padding-left: 10vw;
+    padding-left: 20vw;
 }
+  .therapy-list li {
+    text-align: left; /* Wyrównanie tekstu do lewej strony */
+    margin-bottom: 10px; /* Odstęp między elementami listy */
+    display: flex; /* Użycie flexbox dla łatwiejszego zarządzania wyrównaniem */
+    align-items: center; /* Wyśrodkowanie w pionie */
+  }
+
+  /* Styl dla punktorów listy terapii */
+  .therapy-list li::before {
+    content: '▪'; /* Zastosowanie punktora */
+    margin-right: 10px; /* Odstęp między punktorem a tekstem */
+    flex: none; /* Zapobiega rozciąganiu punktora */
+    align-self: flex-start; /* Wyśrodkowanie punktora względem górnego marginesu elementu listy */
+  }
 
   .office-image-container img {
       max-width: 90%;
