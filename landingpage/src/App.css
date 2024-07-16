@@ -43,4 +43,43 @@
   line-height: 0.5
 }
 
-@import './media.css';
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+
+  .section {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 90vw;
+  }
+
+  .App-header h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .therapy-list {
+    list-style-type: none; /* Usunięcie domyślnych punktorów */
+    text-align: center; /* Wyśrodkowanie całej listy */
+    padding-left: 20vw;
+  }
+  .therapy-list li {
+    text-align: left; /* Wyrównanie tekstu do lewej strony */
+    margin-bottom: 10px; /* Odstęp między elementami listy */
+    display: flex; /* Użycie flexbox dla łatwiejszego zarządzania wyrównaniem */
+    align-items: center; /* Wyśrodkowanie w pionie */
+  }
+
+  /* Styl dla punktorów listy terapii */
+  .therapy-list li::before {
+    content: '▪'; /* Zastosowanie punktora */
+    margin-right: 10px; /* Odstęp między punktorem a tekstem */
+    flex: none; /* Zapobiega rozciąganiu punktora */
+    align-self: flex-start; /* Wyśrodkowanie punktora względem górnego marginesu elementu listy */
+  }
+
+  .office-image-container img {
+      max-width: 90%;
+    }
+}

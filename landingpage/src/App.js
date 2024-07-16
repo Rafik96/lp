@@ -16,22 +16,14 @@ function App() {
     const contactRef = useRef(null);
     
 
-    const scrollToSection = (ref) => {
-        ref.current.scrollIntoView({ behavior: 'smooth' });
-    };
+   
 
     return (
         
         <div className="App">
             <Widget
             />
-            <Navbar
-                scrollToSection={scrollToSection}
-                eduRef={eduRef}
-                expRef={expRef}
-                therapyRef={therapyRef}
-                contactRef={contactRef}
-            />
+            <Navbar />
             <header>
                 <h1><Header/></h1>
             </header>

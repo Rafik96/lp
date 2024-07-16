@@ -1,47 +1,45 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { FiMenu } from 'react-icons/fi'; // Ikona menu hamburgerowego
 import './Navbar.css';
 
-const Navbar = ({ scrollToSection, eduRef, expRef, therapyRef, contactRef }) => {
-    const [isFixed, setIsFixed] = useState(false);
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
     useEffect(() => {
-        const handleScroll = () => {
-            const navbar = document.querySelector('.navbar');
-            const offsetTop = navbar.offsetTop;
+        const navbar = document.querySelector('.navbar');
 
-            if (window.scrollY > offsetTop) {
-                setIsFixed(true);
+        const handleScroll = () => {
+            if (navbar && window.scrollY > navbar.offsetHeight) {
+                navbar.classList.add('navbar-fixed');
             } else {
-                setIsFixed(false);
+                navbar.classList.remove('navbar-fixed');
             }
         };
 
         window.addEventListener('scroll', handleScroll);
+
+        // Clean up
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
-
-    const handleLinkClick = (event, ref) => {
-        event.preventDefault();
-
-        const targetPosition = ref.current.offsetTop - 50;
-
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-        });
-    };
+    }, []); // Pusta tablica dependencies oznacza, że efekt jest uruchamiany tylko raz po zamontowaniu komponentu
 
     return (
-        <nav className={`navbar ${isFixed ? 'fixed' : ''}`}>
-            <div className="navbar-links">
-                <a href="/" onClick={(event) => handleLinkClick(event, eduRef)}>Wykształcenie</a>
-                <a href="/" onClick={(event) => handleLinkClick(event, expRef)}>Doświadczenie zawodowe</a>
-                <a href="/" onClick={(event) => handleLinkClick(event, therapyRef)}>Terapia</a>
-                <a href="/" onClick={(event) => handleLinkClick(event, contactRef)}>Kontakt</a>
+        <div className="navbar">
+            <div className="menu-icon" onClick={toggleMenu}>
+                <FiMenu />
             </div>
-        </nav>
+            <div className={isOpen ? "menu-links active" : "menu-links"}>
+                <a href="#edu" onClick={toggleMenu}>Wykształcenie</a>
+                <a href="#exp" onClick={toggleMenu}>Doświadczenie zawodowe</a>
+                <a href="#therapy" onClick={toggleMenu}>Terapia</a>
+                <a href="#contact" onClick={toggleMenu}>Kontakt</a>
+            </div>
+        </div>
     );
 };
 
