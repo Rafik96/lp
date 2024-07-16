@@ -26,7 +26,7 @@ const Navbar = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []); // Pusta tablica dependencies oznacza, że efekt jest uruchamiany tylko raz po zamontowaniu komponentu
+    });
 
     return (
         <div className="navbar">

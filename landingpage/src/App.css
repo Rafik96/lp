@@ -1,7 +1,9 @@
 .App {
   text-align: center;
   display: block;
+  padding-top:70px
 }
+
 
 .header-image-container {
   margin: 1rem auto;
@@ -44,6 +46,10 @@
 }
 
 @media (max-width: 768px) {
+  .App {
+    padding-top:50px
+  }
+
   .main-content {
     padding: 1rem;
   }
