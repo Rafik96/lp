@@ -23,7 +23,12 @@
     text-decoration: none;
     font-size: 1rem;
 }
+  .therapy-list {
+    list-style-type: none; /* Usunięcie domyślnych punktorów */
+    text-align: center; /* Wyśrodkowanie całej listy */
+    padding-left: 10vw;
+}
   .office-image-container img {
-    max-width: 90%;
-  }
+      max-width: 90%;
+    }
 }

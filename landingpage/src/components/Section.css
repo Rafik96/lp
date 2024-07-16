@@ -21,7 +21,7 @@
 /* Styl dla elementów listy terapii */
 .therapy-list {
     list-style-type: none; /* Usunięcie domyślnych punktorów */
-    padding-left: 40%;
+    padding-left: 20vw;
     text-align: center; /* Wyśrodkowanie całej listy */
 }
 

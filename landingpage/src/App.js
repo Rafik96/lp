@@ -2,6 +2,8 @@
 import React, { useRef } from 'react';
 import Navbar from './components/Navbar';
 import Section from './components/Section';
+import Header from './components/Header';
+import ImageContainer from './components/ImageContainer'
 import './App.css';
 import { sectionsData } from './sectionsData';
 
@@ -24,12 +26,15 @@ function App() {
                 therapyRef={therapyRef}
                 contactRef={contactRef}
             />
-            <header className="App-header">
-                <h1>Psychoterapia uzależnień i wsparcie psychologiczne</h1>
+            <header>
+                <h1><Header/></h1>
             </header>
-            <div className="header-image-container">
-                    <img src="https://i.postimg.cc/4NZTfgD8/Anna-Maguder-2.jpg" alt="Anna Maguder" className="header-image" />
-                    <p className="header-image-caption">mgr Anna Maguder</p>
+            <div>
+            <ImageContainer
+                imageSrc="https://i.postimg.cc/4NZTfgD8/Anna-Maguder-2.jpg"
+                altText="Anna Maguder"
+                caption="mgr Anna Maguder"
+            />
             </div>
             <main className="main-content">
                 <div className="container">

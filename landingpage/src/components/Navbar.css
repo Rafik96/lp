@@ -16,7 +16,7 @@
 
 .navbar-links {
     display: flex;
-    gap: 4rem; /* Dodaje większe odstępy między linkami */
+    gap: 4rem;
 }
 
 .navbar-links a {
