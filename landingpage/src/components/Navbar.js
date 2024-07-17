@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FiMenu } from 'react-icons/fi'; // Ikona menu hamburgerowego
+import { Link } from 'react-scroll';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -9,21 +10,16 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
-    useEffect(() => {
-        const navbar = document.querySelector('.navbar');
-
-    });
-
     return (
         <div className="navbar">
             <div className="menu-icon" onClick={toggleMenu}>
                 <FiMenu />
             </div>
             <div className={isOpen ? "menu-links active" : "menu-links"}>
-                <a href="#edu" onClick={toggleMenu}>Wykształcenie</a>
-                <a href="#exp" onClick={toggleMenu}>Doświadczenie zawodowe</a>
-                <a href="#therapy" onClick={toggleMenu}>Terapia</a>
-                <a href="#contact" onClick={toggleMenu}>Kontakt</a>
+                <Link to="edu" smooth={true} duration={500} onClick={toggleMenu}>Wykształcenie</Link>
+                <Link to="exp" smooth={true} duration={500} onClick={toggleMenu}>Doświadczenie zawodowe</Link>
+                <Link to="therapy" smooth={true} duration={500} onClick={toggleMenu}>Terapia</Link>
+                <Link to="contact" smooth={true} duration={500} onClick={toggleMenu}>Kontakt</Link>
             </div>
         </div>
     );

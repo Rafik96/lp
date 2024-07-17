@@ -116,6 +116,7 @@
   .widget-buttons button {
       flex: 1; /* Przyciski zajmują równą szerokość */
       border-radius: 10px; /* Opcjonalne zaokrąglenie */
+      width: auto !important;
   }
 
   .widget-buttons button .button-icon {

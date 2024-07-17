@@ -1,5 +1,4 @@
 // src/App.js
-import React, { useRef } from 'react';
 import Navbar from './components/Navbar';
 import Section from './components/Section';
 import Header from './components/Header';

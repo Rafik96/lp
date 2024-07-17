@@ -21,17 +21,44 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-}
-
-.widget-buttons button .button-icon {
-    width: 30px; /* Dostosuj szerokość ikon */
-    height: 30px; /* Dostosuj wysokość ikon */
-}
-
-.widget-buttons button span {
-    flex: 1; /* Tekst przycisku zajmuje dostępne miejsce */
+    position: relative; /* Potrzebne dla pseudo-elementów */
+    overflow: hidden; /* Ukrywa elementy wykraczające poza przycisk */
+    width: 50px; /* Początkowa szerokość przycisku */
+    transition: width 0.3s ease; /* Animacja zmiany szerokości */
 }
 
 .widget-buttons button:hover {
     background-color: #3d4231;
+    width: 150px; /* Zwiększa szerokość przycisku na hover */
+}
+
+.widget-buttons button::after {
+    content: attr(txt); /* Pobiera tekst z atrybutu txt */
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%); /* Wyśrodkowuje napis w pionie */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap; /* Zapobiega zawijaniu tekstu */
+    width: 50%;
+}
+
+
+.widget-buttons button:hover::after {
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* Styl tylko dla aktywnego przycisku */
+.widget-buttons button:hover:not(:hover)::after {
+    opacity: 0; /* Ukrywa napisy dla innych niż najechany przycisk */
+}
+
+
+
+
+
+.widget-buttons button .button-icon {
+    width: 30px; /* Dostosuj szerokość ikon */
+    height: 30px; /* Dostosuj wysokość ikon */
 }
