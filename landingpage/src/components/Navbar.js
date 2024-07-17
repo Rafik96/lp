@@ -12,16 +12,6 @@ const Navbar = () => {
     useEffect(() => {
         const navbar = document.querySelector('.navbar');
 
-        const handleScroll = () => {
-            
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        // Clean up
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
     });
 
     return (
