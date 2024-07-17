@@ -7,10 +7,10 @@ import emailIcon from '../icons/email-icon.png'; // Poprawna ścieżka do ikony 
 import phoneIcon from '../icons/phone-icon.png'; // Poprawna ścieżka do ikony telefonu
 
 const Widget = () => {
-    const { url, googleMapsLink, phoneNumber, emailAddress, opacity } = contactData;
+    const { urlDoc, googleMapsLink, phoneNumber, emailAddress, opacity } = contactData;
 
     const openUrl = () => {
-        window.open(url, '_blank');
+        window.open(urlDoc, '_blank');
     };
 
     const openGoogleMaps = () => {
