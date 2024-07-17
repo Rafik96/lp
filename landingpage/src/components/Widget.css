@@ -27,6 +27,11 @@
     transition: width 0.3s ease; /* Animacja zmiany szerokości */
 }
 
+.widget-buttons button .button-icon {
+    width: 30px; /* Dostosuj szerokość ikon */
+    height: 30px; /* Dostosuj wysokość ikon */
+}
+
 .widget-buttons button:hover {
     background-color: #3d4231;
     width: 150px; /* Zwiększa szerokość przycisku na hover */
@@ -54,11 +59,3 @@
     opacity: 0; /* Ukrywa napisy dla innych niż najechany przycisk */
 }
 
-
-
-
-
-.widget-buttons button .button-icon {
-    width: 30px; /* Dostosuj szerokość ikon */
-    height: 30px; /* Dostosuj wysokość ikon */
-}

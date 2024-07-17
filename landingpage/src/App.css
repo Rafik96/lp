@@ -123,4 +123,8 @@
       width: 20px; /* Dostosuj szerokość ikon */
       height: 20px; /* Dostosuj wysokość ikon */
   }
+  
+  .widget-buttons button::after {
+    display: none; /* Ukrywa napis */
+  }
 }
