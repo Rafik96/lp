@@ -13,11 +13,7 @@ const Navbar = () => {
         const navbar = document.querySelector('.navbar');
 
         const handleScroll = () => {
-            if (navbar && window.scrollY > navbar.offsetHeight) {
-                navbar.classList.add('navbar-fixed');
-            } else {
-                navbar.classList.remove('navbar-fixed');
-            }
+            
         };
 
         window.addEventListener('scroll', handleScroll);

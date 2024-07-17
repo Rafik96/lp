@@ -3,7 +3,7 @@
     bottom: 20px;
     left: 20px;
     z-index: 1000;
-    transition: opacity 0.3s ease; /* Dodaj płynność przejścia dla opacity */
+    transition: opacity 0.3s ease;
 }
 
 .widget-buttons {
@@ -24,8 +24,8 @@
 }
 
 .widget-buttons button .button-icon {
-    width: 15px; /* Dostosuj szerokość ikon */
-    height: 15px; /* Dostosuj wysokość ikon */
+    width: 30px; /* Dostosuj szerokość ikon */
+    height: 30px; /* Dostosuj wysokość ikon */
 }
 
 .widget-buttons button span {
