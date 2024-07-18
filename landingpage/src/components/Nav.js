@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FiMenu } from 'react-icons/fi'; // Ikona menu hamburgerowego
 import { Link } from 'react-scroll';
-import './Navbar.css';
+import './Nav.css';
 
-const Navbar = () => {
+const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="navbar">
+        <div className="Nav">
             <div className="menu-icon" onClick={toggleMenu}>
                 <FiMenu />
             </div>
@@ -25,4 +25,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Nav;

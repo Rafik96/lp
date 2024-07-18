@@ -1,4 +1,4 @@
-.widget {
+.Buttons {
     position: fixed;
     bottom: 20px;
     left: 20px;
@@ -6,13 +6,13 @@
     transition: opacity 0.3s ease;
 }
 
-.widget-buttons {
+.Buttons-buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.widget-buttons button {
+.Buttons-buttons button {
     background-color: #646b52;
     color: white;
     border: none;
@@ -27,17 +27,17 @@
     transition: width 0.3s ease; /* Animacja zmiany szerokości */
 }
 
-.widget-buttons button .button-icon {
+.Buttons-buttons button .button-icon {
     width: 30px; /* Dostosuj szerokość ikon */
     height: 30px; /* Dostosuj wysokość ikon */
 }
 
-.widget-buttons button:hover {
+.Buttons-buttons button:hover {
     background-color: #3d4231;
     width: 150px; /* Zwiększa szerokość przycisku na hover */
 }
 
-.widget-buttons button::after {
+.Buttons-buttons button::after {
     content: attr(txt); /* Pobiera tekst z atrybutu txt */
     position: absolute;
     top: 50%;
@@ -49,13 +49,13 @@
 }
 
 
-.widget-buttons button:hover::after {
+.Buttons-buttons button:hover::after {
     opacity: 1;
     font-weight: bold;
 }
 
 /* Styl tylko dla aktywnego przycisku */
-.widget-buttons button:hover:not(:hover)::after {
+.Buttons-buttons button:hover:not(:hover)::after {
     opacity: 0; /* Ukrywa napisy dla innych niż najechany przycisk */
 }
 

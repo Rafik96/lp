@@ -1,6 +1,6 @@
-/* Navbar.css */
+/* Nav.css */
 
-.navbar {
+.Nav {
     position: fixed;
     background-color: #EFF2E8;
     box-shadow: -1px 1px 30px 6px #90977e;
@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 768px) {
-    .navbar {
+    .Nav {
         flex-direction: column;
         align-items: stretch;
         padding: 10px;
@@ -45,7 +45,7 @@
 
     .menu-links {
         position: absolute;
-        top: calc(100%); /* Umieść menu dokładnie pod navbar'em */
+        top: calc(100%); /* Umieść menu dokładnie pod Nav'em */
         background-color: #f9f9f9;
         flex-direction: column;
         width: 100vw;

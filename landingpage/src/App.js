@@ -1,31 +1,21 @@
 // src/App.js
-import React, { useRef } from 'react';
-import Navbar from './components/Navbar';
+import Nav from './components/Nav';
 import Section from './components/Section';
 import Header from './components/Header';
 import ImageContainer from './components/ImageContainer'
-import Widget from './components/Widget';
+import Buttons from './components/Buttons';
 import './App.css';
 import { sectionsData } from './sectionsData';
 
-
 function App() {
-    const eduRef = useRef(null);
-    const expRef = useRef(null);
-    const therapyRef = useRef(null);
-    const contactRef = useRef(null);
     
-
-   
-
     return (
         
         <div className="App">
-            <Widget
-            />
-            <Navbar />
+            
+            <Nav />
             <header>
-                <h1><Header/></h1>
+                <Header/>
             </header>
             <div>
             <ImageContainer
@@ -43,9 +33,11 @@ function App() {
                             title={section.title}
                             content={section.content}
                             imageSrc={section.imageSrc}
-                            ref={section.id === 'edu' ? eduRef : section.id === 'exp' ? expRef : section.id === 'therapy' ? therapyRef : section.className === 'office-image-container' ? contactRef : null}
                         />
                     ))}
+                    {/* <Contact /> */}
+                    {/* <Widget/> */}
+                    <Buttons />
                 </div>
             </main>
         </div>
