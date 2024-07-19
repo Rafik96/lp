@@ -5,6 +5,7 @@ import Header from './components/Header';
 import ImageContainer from './components/ImageContainer'
 import Buttons from './components/Buttons';
 import './App.css';
+import Widget from './components/Widget';
 import { sectionsData } from './sectionsData';
 
 function App() {
@@ -36,12 +37,13 @@ function App() {
                         />
                     ))}
                     {/* <Contact /> */}
-                    {/* <Widget/> */}
+                    <Widget/>
                     <Buttons />
                 </div>
             </main>
         </div>
     );
 }
+
 
 export default App;
