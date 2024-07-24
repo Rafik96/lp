@@ -56,6 +56,6 @@
 
 /* Styl tylko dla aktywnego przycisku */
 .Buttons-buttons button:hover:not(:hover)::after {
-    opacity: 0; /* Ukrywa napisy dla innych niż najechany przycisk */
+    opacity: 0;
 }
 

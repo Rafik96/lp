@@ -33,38 +33,3 @@
     text-decoration: none;
     color: #646b52; /* Domyślny kolor linków */
 }
-
-@media (max-width: 768px) {
-    .Nav {
-        flex-direction: column;
-        padding: 0px;
-    }
-    .menu-icon {
-        display: block;
-        padding: 10px;
-    }
-
-    .menu-links {
-        position: absolute;
-        top: calc(100%); /* Umieść menu dokładnie pod Nav'em */
-        background-color: #f9f9f9;
-        flex-direction: column;
-        width: 100vw;
-        gap: 0;
-        padding: 0px;
-        display: none; /* Domyślnie ukryj menu na mniejszych ekranach */
-    }
-
-    .menu-links.active {
-        display: flex; /* Pokaż menu po kliknięciu na ikonę hamburgerową */
-        left: 0px;
-        right: 0px;
-    }
-
-    .menu-links a {
-        margin: 0px 0;
-        color: #646b52; /* Zmieniony kolor linków */
-        font-family: 'Arial', sans-serif; /* Zmieniony font */
-        font-size: 16px; /* Zmieniony rozmiar fontu */
-    }
-}

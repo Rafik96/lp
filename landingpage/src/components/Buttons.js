@@ -28,7 +28,7 @@ const Buttons = () => {
     return (
         <div className="Buttons" style={{ opacity: opacity }}>
             <div className="Buttons-buttons">
-                <button onClick={openUrl} txt="Znany lekarz">
+                <button onClick={openUrl} txt="Umów wizytę">
                     <img src={docIcon} alt="Znany lekarz" className="button-icon" />
                 </button>
                 <button onClick={openGoogleMaps} txt="Adres">
