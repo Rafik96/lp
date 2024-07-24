@@ -6,6 +6,7 @@ import ImageContainer from './components/ImageContainer'
 import Buttons from './components/Buttons';
 import './App.css';
 import Widget from './components/Widget';
+import Contact from './components/Contact';
 import { sectionsData } from './sectionsData';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
             
             <Nav />
             <header>
-                <Header/>
+                <Header />
             </header>
             <div>
             <ImageContainer
@@ -36,8 +37,8 @@ function App() {
                             imageSrc={section.imageSrc}
                         />
                     ))}
-                    {/* <Contact /> */}
-                    <Widget/>
+                    <Contact />
+                    <Widget />
                     <Buttons />
                 </div>
             </main>

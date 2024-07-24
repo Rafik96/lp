@@ -1,7 +1,9 @@
 {
   "urlDoc": "https://www.znanylekarz.pl/anna-maguder/psycholog/lodz",
   "googleMapsLink": "https://maps.app.goo.gl/R1GQYFWrVczTFowx5",
-  "phoneNumber": "48731346445",
+  "phoneNumber": "731 346 445",
   "emailAddress": "annamaguder.terapia@gmail.com",
-  "opacity": 0.8
+  "opacity": 0.8,
+  "address": "ul. Adama Próchnika 1",
+  "postCode": "90-408 Łódź"
 }

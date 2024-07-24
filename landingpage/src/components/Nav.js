@@ -62,7 +62,7 @@ const Nav = () => {
                     Terapia
                 </Link>
                 <Link
-                    to="contact"
+                    to="contact-container"
                     smooth={smooth}
                     duration={duration}
                     offset={offset}
