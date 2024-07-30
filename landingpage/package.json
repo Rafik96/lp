@@ -1,7 +1,7 @@
 {
   "name": "landingpage",
   "version": "0.1.0",
-  "homepage": "https://rafik96.github.io/lp/",
+  "homepage": ".",
   "private": false,
   "dependencies": {
     "@babel/eslint-parser": "^7.24.8",
